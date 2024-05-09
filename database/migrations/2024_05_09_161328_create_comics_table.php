@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 100);
             $table->text('description');
-            $table->string('cover_img');
+            $table->string('cover_image');
             $table->timestamps();
         });
     }
