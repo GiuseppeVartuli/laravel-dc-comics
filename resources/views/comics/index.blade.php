@@ -13,7 +13,7 @@
                 <div class="card-body">
                   <h5 class="card-title">{{$comic->title}}</h5>
                   <p class="card-text">{{$comic->description}}</p>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a href="{{route('comics.show', $comic)}}" class="btn btn-primary">View</a>
                   <a href="#" class="btn btn-primary">Edit</a>
                   <a href="#" class="btn btn-primary">Delete</a>
                 </div>
