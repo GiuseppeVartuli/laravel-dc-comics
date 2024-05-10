@@ -39,6 +39,7 @@
         <button type="submit" class="btn btn-primary mb-2"> Update </button>
         
     </form>
+    <a class="btn btn-primary mb-2" href="{{route('comics.index')}}">Back</a>
 </div>
 
 @endsection
