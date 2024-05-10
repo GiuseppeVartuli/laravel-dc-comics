@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     
-    
+
 
     return view('welcome');
 });
@@ -25,3 +25,4 @@ Route::get('/', function () {
 
 
 Route::resource('comics', ComicController::class);
+Route::post('/comics/create', [ComicController::class, 'store']);

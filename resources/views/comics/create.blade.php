@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="container bg-light mt-4">
-    <form action="{{route('comics.store')}}" method="post" class="">
+    <form action="{{route('comics.store')}}" method="post">
         @csrf
         <div class="mb-3 ">
             <label for="title" class="form-label">Title</label>
