@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ComicController;
+use App\Models\Comic;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,4 @@ Route::get('/', function () {
 
 Route::resource('comics', ComicController::class);
 Route::post('/comics/create', [ComicController::class, 'store']);
+Route::delete('/comics/{comic}', [ComicController::class, 'destroy'])->name('comics.destry');

@@ -15,7 +15,13 @@
                   <p class="card-text">{{$comic->description}}</p>
                   <a href="{{route('comics.show', $comic)}}" class="btn btn-primary">View</a>
                   <a href="{{route('comics.edit', $comic)}}" class="btn btn-primary">Edit</a>
-                  <a href="#" class="btn btn-primary">Delete</a>
+                  <form action="{{route('comics.destry', $comic)}}" method="POST">
+                      @csrf
+                      @method('DELETE')
+
+                      <button type="submit" class="btn btn-danger ">Delete</button>
+                  
+                  </form>
                 </div>
               </div>
         </div>
