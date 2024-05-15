@@ -18,7 +18,7 @@
               </div>
             </div>
           </div>
-          <a class="btn btn-light " href="{{route('comics.index')}}">Indietro</a>
+          <a class="btn btn-light " href="{{route('comics.index')}}">Back</a>
         </div>
     </div>
 </div>
