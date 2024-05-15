@@ -12,16 +12,18 @@
                 <img src="{{$comic->cover_img}}" class="card-img-top" alt="cover_img">
                 <div class="card-body">
                   <h5 class="card-title">{{$comic->title}}</h5>
-                  <p class="card-text">{{$comic->description}}</p>
-                  <a href="{{route('comics.show', $comic)}}" class="btn btn-primary">View</a>
-                  <a href="{{route('comics.edit', $comic)}}" class="btn btn-primary">Edit</a>
-                  <form action="{{route('comics.destry', $comic)}}" method="POST">
+                  <div class="d-flex ">
+                    <a href="{{route('comics.show', $comic)}}" class="btn btn-primary me-2 ">View</a>
+                  <a href="{{route('comics.edit', $comic)}}" class="btn btn-primary me-2">Edit</a>
+                  <form action="{{route('comics.destroy', $comic)}}" method="POST">
                       @csrf
                       @method('DELETE')
 
                       <button type="submit" class="btn btn-danger ">Delete</button>
                   
                   </form>
+                  </div>
+                  
                 </div>
               </div>
         </div>
